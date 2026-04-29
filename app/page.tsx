@@ -181,11 +181,12 @@ export default function Quiz() {
       <div style={bg}>
         <div style={card}>
           <ConfettiStripe />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={p.image} alt={p.name} style={{ width: "100%", height: "220px", objectFit: "cover" }} />
           <div style={{ padding: "40px" }}>
             <div style={{ fontSize: "12px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#B8956A", marginBottom: "8px" }}>Your coffee personality</div>
             <h1 style={{ fontSize: "36px", fontWeight: 900, color: "#3D2B1A", marginBottom: "8px" }}>{p.emoji} {p.name}</h1>
-            <p style={{ fontSize: "16px", color: "#8B6A4A", fontStyle: "italic", marginBottom: "16px" }}>"{p.tagline}"</p>
+            <p style={{ fontSize: "16px", color: "#8B6A4A", fontStyle: "italic", marginBottom: "16px" }}>&ldquo;{p.tagline}&rdquo;</p>
             <p style={{ fontSize: "15px", color: "#5C3D2A", lineHeight: 1.7, marginBottom: "20px" }}>{p.description}</p>
             <div style={{ background: "#FFF8EE", border: "1.5px solid #EAD9B8", borderRadius: "14px", padding: "16px 20px", marginBottom: "28px" }}>
               <div style={{ fontSize: "12px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#B8956A", marginBottom: "6px" }}>Your drink</div>
